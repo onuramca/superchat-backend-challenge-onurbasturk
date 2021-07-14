@@ -1,6 +1,6 @@
 **How to use?**
 
-**1)** Download/install maven, git and docker-compose!
+**1)** Download/install maven, git, docker and docker-compose!
 
 https://maven.apache.org/
 
