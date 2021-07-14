@@ -32,7 +32,7 @@ https://docs.docker.com/compose/
 
 **7)** Connect to the postgres db from your favourite tool and run the statements in insert.sql 
 
-(necessary for populating the required lookup tables)
+(necessary for populating the required lookup tables and inserting some sample data)
 
 **8)** Open the application in a browser:
 
