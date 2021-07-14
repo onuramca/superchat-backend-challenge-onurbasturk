@@ -10,7 +10,7 @@ https://docs.docker.com/compose/
 
 **2)** Git clone or download the source code!
 
-`git clone https://github.com/onuramca/challenge.git`
+`git clone https://github.com/onuramca/superchat-backend-challenge-onurbasturk.git`
 
 **3)** Open a terminal and change directory to the parent folder
 
