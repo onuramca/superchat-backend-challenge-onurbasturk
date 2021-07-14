@@ -24,7 +24,7 @@ https://docs.docker.com/compose/
 
 **i.** pull the postgres image
 
-**ii.** pull the jdk/maven image
+**ii.** pull the jdk image
 
 **iii.** setup the database 
 
