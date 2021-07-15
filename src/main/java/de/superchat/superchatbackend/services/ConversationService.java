@@ -40,10 +40,6 @@ public class ConversationService {
         return conversation;
     }
 
-    public Conversation getConversationById(long id) {
-        return conversationRepository.getById(id);
-    }
-
     public void saveConversation(Conversation conversation) {
         conversationRepository.save(conversation);
     }

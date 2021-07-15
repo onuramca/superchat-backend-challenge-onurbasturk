@@ -39,13 +39,13 @@ public class MessageService {
         message.setText(replacePlaceHolders(message.getText(), contact.getFirstName(), "1000 $"));
         messageRepository.save(message);
 
-        Conversation conversation = conversationService.getConversationById(messageDto.getConversationId());
+        Conversation conversation = messageDto.getMessage().getConversation();
         if (conversation == null) {
             conversation = conversationService.createNewConversation(messageDto);
             conversationService.saveConversation(conversation);
         }
+
         message.setConversation(conversation);
     }
-
 
 }
