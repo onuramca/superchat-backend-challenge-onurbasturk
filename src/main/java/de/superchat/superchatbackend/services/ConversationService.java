@@ -6,6 +6,7 @@ import de.superchat.superchatbackend.model.Conversation;
 import de.superchat.superchatbackend.model.User;
 import de.superchat.superchatbackend.repository.ConversationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
@@ -27,7 +28,7 @@ public class ConversationService {
     private UserService userService;
 
     public List<Conversation> getAllConversations() {
-        return conversationRepository.findAll();
+        return conversationRepository.findAll(Sort.by("id"));
     }
 
     public Conversation createNewConversation(MessageDto messageDto) {

@@ -45,6 +45,7 @@ public class Conversation {
 
     @OneToMany(mappedBy = "conversation")
     @JsonProperty(access = JsonProperty.Access.READ_ONLY)
+    @OrderBy("timestamp")
     private Collection<Message> messages;
 
     @Override
